@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+/* Paragraphs */
+p {
+  margin: 15px;
+  color: #333;
+}
+
+/* Links */
+a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Agenda list */
+.agenda {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* two-column layout */
+  gap: 10px;
+  margin: 20px;
+  padding: 0;
+  list-style: square inside;
+}
+
+/* Footer */
+footer {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+.f{
+  
+  height: 100vh;          
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+/* Responsive - Small Screens */
+@media screen and (max-width: 600px) {
+  .agenda {
+    grid-template-columns: 1fr; /* stack into single column */
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  header h2 {
+    font-size: 16px;
+  }
+}
+
+/* Print - Hide links and images */
+@media print {
+  a, .banner {
+    display: none;
+  }
+}
